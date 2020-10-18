@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(45deg, #bd83e6, #df83e6);
+  color: #744877;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+::placeholder,
+option {
+  color: #744877;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+h1,
+p {
+  margin-top: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  border: 1px solid black;
+  overflow-y: scroll;
+}
+
+#survey-form {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+}
+
+input[type='email'],
+input[type='text'],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type='number'] {
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+}
+
+input:focus,
+textarea,
+select {
+  outline-color: #ae67b4;
+}
+
+button {
+  background-color: #ae67b4;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+button:hover {
+  background-color: #744877;
+}

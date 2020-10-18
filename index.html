@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 id="title" class="highlight">Survey for course in the summer</h1>
+
+      <p id="description" class="highlight">
+        Tell us the subject you would like to study on next summer
+      </p>
+
+      <form id="survey-form">
+        <div>
+          <label for="name" id="name-label" class="highlight">Name</label><br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div>
+          <label for="email" id="email-label" class="highlight">Email</label
+          ><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter your Email"
+          />
+        </div>
+
+        <div>
+          <label for="age" id="number-label" class="highlight">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="18"
+            max="60"
+            placeholder="Age"
+          />
+        </div>
+
+        <div>
+          <label for="dropdown" class="highlight">Choose one of</label><br />
+          <select name="" id="dropdown">
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+            <option value="">Option 3</option>
+            <option value="">Option 4</option>
+            <option value="">Option 5</option>
+            <option value="">Option 6</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="highlight">Question ...</label> <br />
+          <input type="radio" id="morning" name="period" value="morning" />
+          <label for="morning">Morning</label> <br />
+          <input type="radio" id="afternoon" name="period" value="afternoon" />
+          <label for="afternoon">Afternoon</label> <br />
+          <input type="radio" id="evening" name="period" value="night" />
+          <label for="evening">Evening</label> <br />
+        </div>
+
+        <div>
+          <label class="highlight">Question ...</label> <br />
+          <input type="checkbox" id="answer1" name="question" value="value1" />
+          <label for="answer1">Answer 1</label> <br />
+          <input type="checkbox" id="answer1" name="question" value="value2" />
+          <label for="answer1">Answer 2</label> <br />
+          <input type="checkbox" id="answer1" name="question" value="value3" />
+          <label for="answer1">Answer 3</label>
+        </div>
+
+        <div>
+          <label for="comments" class="highlight"
+            >Any comments or sugestions?</label
+          ><br />
+          <textarea id="comments" rows="6"></textarea>
+        </div>
+        <button type="submit" id="submit">Submit form</button>
+      </form>
+
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </main>
+  </body>
+</html>
