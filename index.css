@@ -22,7 +22,8 @@ option {
 }
 
 h1,
-p {
+p,
+div {
   margin-top: 20px;
 }
 
